@@ -32,7 +32,7 @@ $$x_s(t) = s(t)\cdot x(t) = \sum_{n=-\infty}^{\infty}\delta(t-nT)\cdot x(t) = \s
 
 Taking the Fourier Transform of $x_s(t)$ gives:
 ```math
-begin{align}
+\begin{align}
 \notag X_s(f) = \mathcal{F}\{x_s(t)\} &= \int_{-\infty}^{\infty}x_s(t)\cdot e^{-j2\pi ft}dt\\
 \notag &=\int_{-\infty}^{\infty}\left[\sum_{n=-\infty}^{\infty}\delta(t-nT)\cdot x(nT)\right]\cdot e^{-j2\pi f t}dt\\
 \notag &=\sum_{n=-\infty}^{\infty}\left[x(nT)\int_{-\infty}^{\infty}\delta(t-nT)\cdot e^{-j2\pi f t}dt\right]\\
