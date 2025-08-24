@@ -14,9 +14,9 @@ Following this, the Inverse Continuous Fourier Transform (ICFT) is given by:
 
 $$\boxed{f(t) = \frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega)e^{j\omega t}d\omega,\quad\forall\ t \in \Re}$$
 
-Where:
+Where: $\omega = 2\pi f$
 
-$$\omega = 2\pi f$$
+This is used to transform a continuous signal into a continuous frequency representation.
 
 
 ## Discrete Time Fourier Transform
@@ -45,8 +45,11 @@ Subbing $\omega = 2\pi f_\omega$ gives:
 
 $$\boxed{X(\omega)=\sum_{n=-\infty}^{\infty}x(nT)\cdot e^{-jn\omega}}$$
 
-To derive the Inverse Discrete Time Fourier Transform (IDTFT), we consider the window of the samples signal.
-$$TODO$$
+To derive the Inverse Discrete Time Fourier Transform (IDTFT), we consider the window of the samples signal. E.g. $w \in [-\pi, \pi]$.
+
+$$S_{\frac{1}{T}}(f) \equiv T\cdot s(nT)$$
+
+This is used to transform a discrete signal into a continuous frequency representation.
 
 
 ## Example
