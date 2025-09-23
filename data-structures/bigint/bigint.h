@@ -7,7 +7,7 @@
 
 // *****************************************************************************
 // BigInt
-// sign: is 0 if positive otherwise negative
+// sign: 1 for positive, 0 for zero, -1, for negative
 // len: number of limbs currently utilised
 // cap: current number of limbs allocated to this BigInt
 // limbs: little endianess limbs. E.g. ui32 ABCD will be l[0] = A, l[1] = B, ...
